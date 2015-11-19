@@ -1,0 +1,22 @@
+public class NumReverse {
+    private static java.util.Scanner input;
+    public static void main(String[] args) {
+        System.out.println("Enter your number");
+        input = new java.util.Scanner(System.in);
+
+        int num = input.nextInt();
+        String s = String.valueOf(num);
+        System.out.println("Ur number after reverse: ");
+        NumReverse(s);
+
+
+    }
+
+    public static void NumReverse(String s){
+
+        StringBuilder sb = new StringBuilder(s);
+        sb.reverse();
+        String s2 = sb.toString();
+        System.out.println(s2);
+    }
+}
