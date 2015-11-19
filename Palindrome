@@ -1,0 +1,24 @@
+public class NumReverse {
+    private static java.util.Scanner input;
+    public static void main(String[] args) {
+        System.out.println("Enter your number");
+        input = new java.util.Scanner(System.in);
+        int num = input.nextInt();
+        String s = String.valueOf(num);
+        IsPalindrome(s);
+    }
+
+    public static String  NumReverse(String s){
+
+        StringBuilder sb = new StringBuilder(s);
+        sb.reverse();
+        String s2 = sb.toString();
+        return s2;
+    }
+    public static void IsPalindrome(String s){
+        String s1 = NumReverse(s);
+        if (s.equals(s1))
+             System.out.println("Ur number is palindrome ");
+                else System.out.println("not palindrome");
+    }
+}
